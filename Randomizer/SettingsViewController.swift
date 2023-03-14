@@ -29,7 +29,7 @@ final class SettingsViewController: UIViewController {
     
     @IBAction func saveButtonTapped() {
         view.endEditing(true)
-        delegate.setNewValue(fro: randomNumber)
+        delegate.setNewValue(for: randomNumber)
         dismiss(animated: true)
     }
 }

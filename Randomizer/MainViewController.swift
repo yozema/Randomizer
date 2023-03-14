@@ -8,7 +8,7 @@
 import UIKit
 
 protocol SettingsViewControllerDelegate: AnyObject {
-    func setNewValue(fro randomNumber: RandomNumber)
+    func setNewValue(for randomNumber: RandomNumber)
 }
 
 final class MainViewController: UIViewController {
@@ -45,7 +45,7 @@ final class MainViewController: UIViewController {
 
 // MARK: - SettingsViewControllerDelegate
 extension MainViewController: SettingsViewControllerDelegate {
-    func setNewValue(fro randomNumber: RandomNumber) {
+    func setNewValue(for randomNumber: RandomNumber) {
         self.randomNumber = randomNumber
     }
 }
